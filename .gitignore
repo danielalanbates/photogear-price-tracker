@@ -1,0 +1,81 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+
+# Logs
+logs/
+*.log
+error.log
+combined.log
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+postgres-data/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Chrome extension (unpacked)
+extension/*.pem
+extension/*.crx
+extension/key.pem
+
+# Build artifacts
+dist/
+build/
+*.zip
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Testing
+coverage/
+.nyc_output/
+
+# Python (if using Python scrapers)
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+.venv/
+ENV/
+
+# Scraped data cache
+cache/
+scraped_data/
+
+# Sensitive files
+secrets/
+credentials/
+*.pem
+*.key
+*.cert
+
+# Documentation (keep)
+!README.md
+!LICENSE
+!CHANGELOG.md

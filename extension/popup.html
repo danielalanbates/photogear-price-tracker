@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhotoGear Price Tracker</title>
+  <link rel="stylesheet" href="popup-styles.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header>
+      <h1>📸 PhotoGear Tracker</h1>
+      <div class="user-info">
+        <span id="user-email">Not signed in</span>
+        <button id="sign-in-btn" class="btn-secondary">Sign In</button>
+      </div>
+    </header>
+
+    <nav class="tabs">
+      <button class="tab active" data-tab="tracked">Tracked Items</button>
+      <button class="tab" data-tab="deals">Best Deals</button>
+      <button class="tab" data-tab="settings">Settings</button>
+    </nav>
+
+    <!-- Tracked Items Tab -->
+    <div id="tracked-tab" class="tab-content active">
+      <div class="section-header">
+        <h2>Your Tracked Items</h2>
+        <span id="tracked-count" class="badge">0</span>
+      </div>
+
+      <div id="tracked-list" class="item-list">
+        <div class="empty-state">
+          <p>No tracked items yet</p>
+          <p class="hint">Visit B&H, Adorama, KEH, or MPB and click "Track This Item"</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Best Deals Tab -->
+    <div id="deals-tab" class="tab-content">
+      <div class="section-header">
+        <h2>🔥 Best Deals Today</h2>
+      </div>
+
+      <div id="deals-list" class="item-list">
+        <div class="loading">Loading deals...</div>
+      </div>
+    </div>
+
+    <!-- Settings Tab -->
+    <div id="settings-tab" class="tab-content">
+      <div class="section-header">
+        <h2>Settings</h2>
+      </div>
+
+      <div class="settings-group">
+        <h3>Notifications</h3>
+        <label class="checkbox-label">
+          <input type="checkbox" id="enable-notifications" checked>
+          <span>Enable browser notifications</span>
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" id="enable-email" checked>
+          <span>Enable email alerts</span>
+        </label>
+      </div>
+
+      <div class="settings-group">
+        <h3>Alert Frequency</h3>
+        <select id="alert-frequency">
+          <option value="instant">Instant alerts</option>
+          <option value="daily">Daily digest</option>
+          <option value="weekly">Weekly summary</option>
+        </select>
+      </div>
+
+      <div class="settings-group">
+        <h3>Deal Quality Threshold</h3>
+        <select id="deal-threshold">
+          <option value="all">All deals</option>
+          <option value="good">Good deals only (70+)</option>
+          <option value="great">Great deals only (85+)</option>
+        </select>
+      </div>
+
+      <div class="upgrade-section">
+        <h3>🎯 Upgrade to Premium</h3>
+        <ul>
+          <li>✅ Track unlimited items (Free: 5 max)</li>
+          <li>✅ Advanced price predictions</li>
+          <li>✅ Priority alerts</li>
+          <li>✅ Portfolio tracking</li>
+        </ul>
+        <button id="upgrade-btn" class="btn-primary">Upgrade for $9.99/month</button>
+      </div>
+    </div>
+
+    <footer>
+      <button id="view-dashboard" class="btn-link">View Full Dashboard</button>
+      <div class="version">v1.0.0</div>
+    </footer>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

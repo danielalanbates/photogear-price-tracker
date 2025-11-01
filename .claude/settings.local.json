@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd:*)",
+      "Bash(chmod:*)",
+      "Bash(tree:*)",
+      "Bash(node -c:*)",
+      "Bash(node:*)",
+      "Bash(\"/Users/daniel/Documents/aicode/Price Tracker/extension/verify.sh\")",
+      "Bash(./verify.sh:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
